@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif, Helvetica;
+}
+
+.header {
+    text-align: center;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(69deg, rgba(131, 58, 180, 1) 0%, rgba(5, 128, 69, 1) 27%, rgba(252, 176, 69, 1) 100%);
+    color: white;
+    height: 70px;
+    margin: 0;
+}
+
+.header h2 {
+    padding-top: 22px;
+    font-weight: 600;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 32px;
+    color:#00224b;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(69deg, rgba(131, 58, 180, 1) 0%, rgba(123, 128, 5, 1) 0%, rgba(252, 176, 69, 1) 52%);   
+}
+
+#city-search {
+    margin: 15px;
+}
+
+#city-search h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 5px;
+    color: #06025d;
+}
+
+hr {
+    height: 4px;
+}
+
+input {
+    width: 98%;
+    color: #6e6e6e;
+}
+
+#search-box {
+    margin-bottom: 10px;
+    color: #929292;
+}
+
+#search-btn {
+    width: 98%;
+    height: 40px;
+    text-align: center;
+    background-color: #022855;
+    color: #f0f0f0;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+#clear-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clear {
+    width: 70%;
+    height: 40px;
+    background-color: #04254d;
+    color: #f0f0f0;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#clear:hover {
+    box-shadow: 0 8px 13px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#search-btn:hover {
+    box-shadow: 0 8px 13px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#search-history {
+    margin: 15px;
+}
+
+.prev-results-btn {
+    width: 98%;
+    height: 40px;
+    text-align: center;
+    background-color: #929292;
+    color: #000000;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 8px;
+
+}
+
+#weather-report {
+    width: 95%;
+    height: 175px;
+    border: 1px solid #929292;
+    margin: 15px;
+    color: #00224b;
+}
+
+#weather-report h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 5px;
+    color: #06025d;
+}
+
+#weather-report p {
+    margin-left: 5px
+}
+
+#forecast {
+    margin: 15px;
+    width: 95%;
+}
+
+#forecast h3 {
+    color: #06025d;
+}
+
+#forecast-cards {
+    display: flex;
+    /* margin: 5px; */
+}
+
+.day-card {
+    background-color: #00224b;
+    height: 250px;
+    width: 200px;
+    color: white;
+    margin: 5px;
+}
+
+.day-card h4 {
+    margin-left: 5px;
+}
+
+.day-card p {
+    margin-left: 5px;
+}
