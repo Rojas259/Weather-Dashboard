@@ -117,7 +117,7 @@ input {
     color: #06025d;
 }
 
-#weather-report p {
+.weather-report p {
     margin-left: 5px
 }
 

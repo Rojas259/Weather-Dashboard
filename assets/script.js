@@ -2,6 +2,7 @@ var weatherReport = document.getElementById("weather-report");
 var forecast = document.getElementById("forecast");
 function clearWeatherReport() {
     weatherReport.innerHTML = "";
+
 }
 function storeSearch(location) {
     var storedLocations = JSON.parse(localStorage.getItem("storedLocations")) || [];
@@ -11,7 +12,7 @@ function storeSearch(location) {
 }
 function getWeatherApi(lat, lon) {
     var units = "imperial"
-    var apiUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&units=' + units + '&appid=7683dd89e3713c696366aefeb8fa991f';
+    var apiUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&units=' + units + '&appid=a0da978e0952cbf2c0a883a35eb6b7fc';
     fetch(apiUrl)
         .then(function (response) {
             return response.json();
@@ -82,7 +83,7 @@ var formSubmitHandler = function (event) {
     if (locationSearch) {
         storeSearch(locationSearch);
         // This is the code to convert the location name into lon and lat values. 
-        var geoApiUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + locationSearch + "&limit=1&appid=7683dd89e3713c696366aefeb8fa991f"
+        var geoApiUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + locationSearch + "&limit=1&appid=a0da978e0952cbf2c0a883a35eb6b7fc"
         fetch(geoApiUrl)
             .then(function (response) {
                 return response.json()
@@ -127,7 +128,7 @@ function displaySearchHistory() {
             historyBtn.addEventListener("click", function (event) {
                 var nameValue = event.target.value;
                 if (nameValue) {
-                    var geoApiUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + nameValue + "&limit=1&appid=7683dd89e3713c696366aefeb8fa991f"
+                    var geoApiUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + nameValue + "&limit=1&appid=a0da978e0952cbf2c0a883a35eb6b7fc"
                     fetch(geoApiUrl)
                         .then(function (response) {
                             return response.json()
